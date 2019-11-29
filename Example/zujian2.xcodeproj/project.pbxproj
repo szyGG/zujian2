@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5015E52B23910149006A1363 /* GGMyFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = 5015E52A23910149006A1363 /* GGMyFriends.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D6485D1B6FEC4F2790B7765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0D6485D1B6FEC4F2790B7765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4E8E0CF67FF553BEDBDBFA8F /* Pods-zujian2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zujian2_Example.release.xcconfig"; path = "Target Support Files/Pods-zujian2_Example/Pods-zujian2_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5015E52923910149006A1363 /* GGMyFriends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGMyFriends.h; sourceTree = "<group>"; };
+		5015E52A23910149006A1363 /* GGMyFriends.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGMyFriends.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* zujian2_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zujian2_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +64,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765B6DBFD3402B974B2C1F6A /* Pods_zujian2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zujian2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		961547626907D470096E0D88 /* zujian2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = zujian2.podspec; path = ../zujian2.podspec; sourceTree = "<group>"; };
+		961547626907D470096E0D88 /* zujian2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = zujian2.podspec; path = ../zujian2.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96210667A744189971AA3BD0 /* Pods-zujian2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zujian2_Tests.debug.xcconfig"; path = "Target Support Files/Pods-zujian2_Tests/Pods-zujian2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CADC4322AD19051EE0A0FB7B /* Pods_zujian2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zujian2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57154E4EA3D76A445CAC428 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E57154E4EA3D76A445CAC428 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E85ACA6031EDFBF5E2DE0747 /* Pods-zujian2_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zujian2_Example.debug.xcconfig"; path = "Target Support Files/Pods-zujian2_Example/Pods-zujian2_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3ECC43D9A94AD0E9D6DEF41 /* Pods-zujian2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zujian2_Tests.release.xcconfig"; path = "Target Support Files/Pods-zujian2_Tests/Pods-zujian2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,9 +98,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5015E528239100F9006A1363 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				5015E52923910149006A1363 /* GGMyFriends.h */,
+				5015E52A23910149006A1363 /* GGMyFriends.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				5015E528239100F9006A1363 /* class */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for zujian2 */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,7 +206,6 @@
 				96210667A744189971AA3BD0 /* Pods-zujian2_Tests.debug.xcconfig */,
 				F3ECC43D9A94AD0E9D6DEF41 /* Pods-zujian2_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -367,6 +380,7 @@
 				6003F59E195388D20070C39A /* SZYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SZYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5015E52B23910149006A1363 /* GGMyFriends.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

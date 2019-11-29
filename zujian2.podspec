@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'zujian2/Classes/**/*'
+  s.source_files = 'Example/class/**/*'
   
   # s.resource_bundles = {
   #   'zujian2' => ['zujian2/Assets/*.png']
